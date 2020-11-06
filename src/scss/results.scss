@@ -1,0 +1,115 @@
+@import "variables.scss";
+@import "extends.scss";
+
+.results-count {
+    display: flex;
+    margin-left: 10%;
+    height: 43px;
+    font-size:small;
+    color: #777;
+}
+
+.results {
+    @extend %flex-column;
+    margin-left: 10%;
+    width: 640px;
+
+    &__main-results {
+        @extend %flex-column;
+    }
+    
+    &__related-search {
+        margin-bottom: 30px;
+            a {
+                text-decoration: none;
+            }
+    }
+
+    &__including-results {
+        font-size:18px;
+    }
+    
+    &__search-only {
+        font-size: 15px;
+    }
+
+    &__main-result {
+        @extend %flex-column;        
+        border: $border;
+        border-radius: $side-bar-results-border-radius;
+    }
+
+    &__main-result-top {
+        display: flex;
+        @media(max-width: 1200px){
+            flex-wrap: wrap-reverse;
+        }
+    }  
+    
+    &__main-result-text {
+        padding: 16px 0 16px 16px;
+        font-size: 16px;
+        line-height: 1.375;
+        text-align: justify;
+        @media(max-width: 1200px){
+            padding: 16px;
+        }
+    }
+
+    &__main-result-icons {
+        display: flex;
+        justify-content: flex-end;
+        height: 24px;
+        color: #777;
+        font-size: 12px;
+        line-height: 1.33;
+    
+        a {
+            text-decoration: none;
+            padding-left: 30px;
+        }
+    }
+    
+    &__result {
+        margin-bottom: 26px;
+        margin-left: 16px;
+    }
+    
+    &__result-title {
+        display:flex;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    &__result-url {
+        display: flex;
+        font-size: 14px;
+        line-height: 1.43;
+        color: #006621;
+        
+    }
+    
+    &__result-description {
+        margin: 0;
+        font-size:small;
+        color: #545454;
+        line-height: 1.54;
+        text-decoration: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+    
+    @media(max-width: 1200px){
+        margin-left: 3%;
+    }
+
+    @media (max-width: 768px){
+        width: 90%;
+        margin: 0 auto;
+    }  
+
+}
+
+

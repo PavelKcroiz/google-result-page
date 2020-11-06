@@ -1,0 +1,46 @@
+@import "variables.scss";
+@import "extends.scss";
+
+.search-bar {
+    @extend %search-bar-display;
+    border: $border;
+    border-radius: $search-border-radius;
+    height: $search-bar-height;
+    width: $search-bar-width;
+
+    &__form {
+        @extend %search-bar-display;
+        width: $search-bar-width;
+        @media (max-width: 768px) {
+            width: 90vw;
+        }
+    }
+
+    &__input {
+        @extend %search-bar-display;
+        margin: 5px 0 0 10px;
+        align-items: center;
+        height: $search-bar-height * 0.8;
+        width: $search-bar-width * 0.9;
+        border:none;
+        @media (max-width: 768px) {
+            width: 72vw;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        margin-left: 40px;
+        padding-right: 20px;
+    }
+
+    &__icon {
+        padding: 15px 0 0 10px;
+        color: #1A73E8;
+    }
+    @media (max-width: 768px){
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 90vw;
+    }
+}

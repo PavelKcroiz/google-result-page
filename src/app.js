@@ -1,0 +1,8 @@
+import './scss/footer.scss'
+import './scss/google-pagination.scss'
+import './scss/header.scss'
+import './scss/main.scss'
+import './scss/results.scss'
+import './scss/search-bar.scss'
+import './scss/side-bar.scss'
+import './scss/variables.scss'

@@ -1,0 +1,7 @@
+@mixin letters($url, $width) {
+    background: url($url) top left no-repeat;
+    height:40px;
+    width: $width;	
+    display: flex;
+
+}

@@ -1,0 +1,116 @@
+@import "variables";
+
+.header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: $border;
+}
+
+.top-bar {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    &__logo {
+        display: inline-flex;
+        box-sizing: content-box;
+        padding: 10px 28px 0 30px;
+        line-height: 15.2px;
+        @media (max-width: 768px){
+            display: block;
+        }
+    }
+
+    &__google-logo {
+        height: 30px;
+        width: 92px;
+    }
+
+    &__left-elems {
+        display: flex;
+        @media (max-width: 768px){
+            display: block;
+        }
+    }
+
+    &__right-elems {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        @media (max-width: 768px){
+            display: none;
+        }
+    }
+
+    &__user {
+        display:flex;
+        background-color: #5e0b69;
+        color: white;
+        font-size:18px;
+        justify-content: center;
+        align-items: center;
+        width:34px;
+        height: 34px;
+        border: 1px solid  #5e0b69;
+        border-radius: 100%; 
+    }
+
+    &__image {
+        width: 18px;
+        height: 18px;
+        margin-right:20px;
+    }    
+}
+
+.top-nav {
+    display:flex;
+    @media (max-width: 768px){
+        margin: 0 auto;
+    } 
+    &__elem-list {
+        display:flex;
+    }
+    &__elem-list--left {
+        margin-left: 120px;
+        @media (max-width: 768px){
+            margin-left: 0;
+            padding-left: 0;
+        } 
+    }
+
+    &__elem-list--right {
+        @media (max-width: 768px){
+            display: none;
+        }
+    }
+
+    &__list-item {
+        padding-right: 25px;
+        display: inline-flex;
+        list-style: none;
+        @media (max-width: 480px){
+            padding-right: 15px;
+        } 
+        a {
+            display: inline-flex;
+            text-decoration: none;
+            font-size: 13px;
+            color: $top-nav-icons-color;
+        }
+        a:hover {
+            transition: all 0.5s ease;
+            color: #00ADE4;
+        }
+    }
+
+    &__icon {
+        padding-right: 10px;
+    }
+    
+    @media(max-width: 992px){
+        &__icon {
+            display: none;
+        }
+    }
+    
+}

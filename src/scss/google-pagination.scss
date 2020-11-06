@@ -1,0 +1,58 @@
+@import "mixins.scss";
+@import "extends.scss";
+
+.google-pagination {
+	display:flex;
+	width: 100%;
+	padding-bottom: 20px;
+	justify-content: center;
+	
+	&__link {
+		text-decoration: none;
+	}
+
+	&__Gcol {
+		@extend %col;
+	}
+
+	&__o1col {
+		@extend %col;
+	}
+
+	&__o2col {
+		@extend %col;
+	}
+
+	&__glecol {
+		text-align: right;
+	}
+
+	&__G{
+		@include letters('../../public/images/G.png', 28px);
+	}
+	
+	&__o1 {
+		@include letters('../../public/images/o1.png', 15px);
+	}
+	
+	&__o2 {
+		@include letters('../../public/images/o2.png', 18px);
+	}
+	
+	&__gle {
+		@include letters('../../public/images/gle.png', 80px);
+	}
+	
+	&__o2--delete {
+		@media (max-width: 480px) {
+			display: none;
+		}
+	}
+}
+
+
+
+
+
+
+
